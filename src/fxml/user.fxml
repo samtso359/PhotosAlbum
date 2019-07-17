@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.UserController">
+   <children>
+      <ListView fx:id="listView" editable="true" layoutX="30.0" layoutY="50.0" prefHeight="530.0" prefWidth="502.0" style="-fx-background-color: lightpink;" AnchorPane.topAnchor="50.0" />
+      <Text layoutX="30.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Album List" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+      <Button layoutX="546.0" layoutY="218.0" mnemonicParsing="false" onAction="#createAlbum" prefHeight="27.0" prefWidth="109.0" text="Create album" />
+      <Button layoutX="674.0" layoutY="218.0" mnemonicParsing="false" onAction="#deleteAlbum" prefHeight="27.0" prefWidth="109.0" text="Delete album" />
+      <Button layoutX="696.0" layoutY="486.0" mnemonicParsing="false" onAction="#logOut" prefHeight="27.0" prefWidth="65.0" text="Log out" />
+      <Button layoutX="546.0" layoutY="163.0" mnemonicParsing="false" onAction="#openAlbum" prefHeight="27.0" prefWidth="109.0" text="Open Album" />
+      <Button layoutX="674.0" layoutY="163.0" mnemonicParsing="false" onAction="#changeAlbumname" prefHeight="27.0" prefWidth="149.0" text="Change Album Name" />
+   </children>
+</AnchorPane>
